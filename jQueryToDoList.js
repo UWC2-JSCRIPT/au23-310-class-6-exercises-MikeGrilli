@@ -6,7 +6,7 @@ $(document).ready(function() {
   function toggleItem(e) {
     $(this).toggleClass("done");
   }
-
+  
   $('li').on('click', toggleItem)
 
   /**
@@ -25,16 +25,16 @@ $(document).ready(function() {
   const addListItem = function(e) {
     e.preventDefault();
 
-    const text = $('input').val();
+    const $text = $('input').val();
     const $li = $('<li>')
-    const $span = $('<span>').text(text)
-    const $button = $('<a>').text('Delete').addClass('delete')
+    const $span = $('<span>').text($text)
+    const $a = $('<a>').text('Delete').addClass('delete')
     
     $li.append($span)
     $('ul').append($li)
-    $li.append($button)
+    $li.append($a)
 
-    $('li').on('click', toggleItem)
+    $($li).on('click', toggleItem)
     $('.delete').on('click', deleteItem)
 
   }
