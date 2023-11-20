@@ -26,7 +26,7 @@ $(document).ready(function() {
     const $lastP = $('p')
     $a.insertAfter($lastP);
 
-    //access data-color atrr of the image
+    //access data-color atrr of the img
     const img = $('img')
     console.log(img[0].dataset.color)
 
