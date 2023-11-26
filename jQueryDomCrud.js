@@ -44,5 +44,4 @@ $(document).ready(function() {
         $newP.text('Added to cart')
         $('main').append($newP)
     })
-
 })
